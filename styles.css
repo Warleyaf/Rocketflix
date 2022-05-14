@@ -13,6 +13,9 @@ body {
   margin-top: 7.80rem;
   color: white;
   font-family: 'Poppins', sans-serif;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
 }
 
 /*==========Logo / H1 ====================*/
@@ -50,7 +53,15 @@ section .container #info-movie h1 {
   margin-bottom: 1.25rem;
 }
 
+section .container #info-movie .movie-data p {
+  overflow-y: scroll;
+  height: 204px;
+}
 
+section .container .logo {
+  height: 5.44rem;
+  width: 3.93rem;
+}
 
 /*Button / footer*/
 section .button {
@@ -67,9 +78,66 @@ section .button button {
   cursor: pointer;
   margin-top: 1.875rem;
   margin-bottom: 1.62rem;
+  transition: 0.2s;
+}
+
+section .button button:active {
+  background-color: #c5c5c5;
 }
 
 section button img {
   width: 1.62rem;
   margin-right: 1.06rem;
+}
+
+/*========= Mobile =============*/
+
+@media (max-width: 640px) {
+  body {
+    display: block;
+    margin-top: 1rem;
+    overflow: auto;
+  }
+
+
+  section .container .logo {
+    height: 4.44rem;
+    width: 2.93rem;
+  }
+
+  section .container .titulo {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  section .container #info-movie {
+    text-align: center;
+    display: inline;
+  }
+
+  section .container #info-movie img {
+
+    margin-right: 0px;
+    background-size: contain;
+    margin-top: 0px;
+    height: 10.18rem;
+    width: 7.68rem;
+  }
+
+  section .container #info-movie .movie-data h1 {
+    font-size: 1.2rem;
+  }
+
+  section .container #info-movie .movie-data p {
+    overflow-y: scroll;
+    height: 104px;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  section p:nth-child(5) {
+    font-size: 0.8rem;
+    margin: 0 auto;
+    width: 90%;
+  }
 }
