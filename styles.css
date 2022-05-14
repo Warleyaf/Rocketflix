@@ -35,20 +35,18 @@ section .container .info-movie {
   display: flex;
   width: 39.25rem;
   text-align: start;
-  border: 1px solid #1E46A3;
 }
 
 section .container .info-movie img {
   margin-right: 2.12rem;
   background-size: contain;
-  border: 1px solid #1E46A3;
-
-
+  margin-top: 15px;
+  height: 15.18rem;
+  width: 10.68rem;
 }
 
 section .container .info-movie h1 {
   margin-bottom: 1.25rem;
-  border: 1px solid #1E46A3;
 }
 
 
